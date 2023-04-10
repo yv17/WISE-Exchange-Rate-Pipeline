@@ -28,11 +28,14 @@ Instructions:
     docker-compose up -d
     ```
 
-2. Go to your browser and copy the path http://localhost:8080/ on a new tab. Login to your local Airflow server using "airflow" for both the username and password.
+2. Go to your browser and copy the path http://localhost:8080/ on a new tab. Login to your local Airflow server using "airflow" for both the username and password.You should see a DAG named "wise_exchange_rate_dag" on your Airflow server
 
-3. You should see a DAG named "wise_exchange_rate_dag" on your Airflow server
+3. Navigate to Connections on your Airflow server and create a new connection using the following details:
+        * name = wise_latest_exchange_rate_api
+        * url  = https://api.transferwise.com/v1
+        * type = HTTP
 
-4. Go back to your IDE and open the python file in docker\airflow\dags
+4. Go back to your IDE and open the python file named "wise_exchange_rate_dag" in docker\airflow\dags
 
 5. To be continued...
 
