@@ -40,7 +40,7 @@ You should see a DAG named "wise_exchange_rate_dag" on your Airflow server
 
     <sup>*Check that the connection still exists if your Airflow server is restarted, else the pipeline will fail*</sup>
 
-4. Go back to your IDE and open the python file named "wise_exchange_rate_dag" in docker\airflow\dags. Follow the comments in the codes to customize your currency pairs. You can get your WISE API key on the account [settings](https://wise.com/settings/) page under the API Token section.\
+4. Go back to your IDE and open the python file named [wise_exchange_rate_dag](https://github.com/yv17/WISE-Exchange-Rate-Pipeline/blob/main/docker/airflow/dags/wise_exchange_rate_dag.py) in docker\airflow\dags. Follow the comments in the codes to customize your currency pairs. You can get your WISE API key on the account [settings](https://wise.com/settings/) page under the API Token section.\
 <sup>*Remember to whitelist your IP as well, it could be the IP address has changed if the pipeline fails in the future.*</sup>
 
 5. Run the DAG and you should be able to see the data on the csv file once it succeeds!\
