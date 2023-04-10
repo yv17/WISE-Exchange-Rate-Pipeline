@@ -19,7 +19,7 @@ Instructions:
 
     If it is your first time running, use： 
 
-    docker-compose up airflow-init
+    docker-compose up airflow-init \\
     docker-compose up
 
     else use:
