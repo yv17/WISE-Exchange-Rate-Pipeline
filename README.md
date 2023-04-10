@@ -38,9 +38,13 @@ You should see a DAG named "wise_exchange_rate_dag" on your Airflow server
     * url  = https://api.transferwise.com/v1
     * type = HTTP
 
-4. Go back to your IDE and open the python file named "wise_exchange_rate_dag" in docker\airflow\dags. Follow the comments in the codes to customize your currency pairs. You can get your WISE API key on the account [settings](https://wise.com/settings/) page under the API Token section. Remember to whitelist your IP as well, however if the pipeline fails in the future, it could be the IP address has changed.
+*Check that the connection still exists if your Airflow server is restarted, else the pipeline will fail
 
-5. Run the DAG and you should be able to see the data on the csv file once it succeeds! Remember the dates could be not in ascending order as it depends which date finishes first.
+4. Go back to your IDE and open the python file named "wise_exchange_rate_dag" in docker\airflow\dags. Follow the comments in the codes to customize your currency pairs. You can get your WISE API key on the account [settings](https://wise.com/settings/) page under the API Token section. 
+*Remember to whitelist your IP as well, it could be the IP address has changed if the pipeline fails in the future.
+
+5. Run the DAG and you should be able to see the data on the csv file once it succeeds! 
+*Remember that the dates could be not in ascending order as it depends on which date finishes first.
 
 ## References:
 There is a list of API on the WISE official website (https://api-docs.transferwise.com/api-reference) that you can play with. 
