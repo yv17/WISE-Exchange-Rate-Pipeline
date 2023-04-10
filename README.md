@@ -48,10 +48,11 @@ You should see a DAG named "wise_exchange_rate_dag" on your Airflow server
 
 ## References:
 Here are some Airflow tutorial links which I found to be very useful:
+
     * [Airflow Tutorial Zero to Hero](https://www.youtube.com/watch?v=K9AnJ9_ZAXE) by coder2j
     * [How to start with Apache Airflow in Docker (Windows)](https://medium.com/@garc1a0scar/how-to-start-with-apache-airflow-in-docker-windows-902674ad1bbe) by Oscar Garcia
 
-There is also a list of API on the WISE official website (https://api-docs.transferwise.com/api-reference) that you can play with.
+There is also [a list of APIs](https://api-docs.transferwise.com/api-reference) on the WISE official website  that you can play with.
 
 I hope you can get some inspirations from this project and build something fun!
 
