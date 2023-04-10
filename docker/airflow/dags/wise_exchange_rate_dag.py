@@ -9,9 +9,8 @@ from airflow.operators.python import PythonOperator
 def save_exchange_rate(ti) -> None:
     exchg_rate = ti.xcom_pull(task_ids = ['get_latest_exchange_rate'])
     exchg_rate_dict = exchg_rate[0][0]
-    # print(exchg_rate_dict)
-    # print(os.getcwd())
-    with open('./plugins/gbp2myr.csv', 'a') as f:
+ 
+    with open('./plugins/gbp2myr.csv', 'a') as f: #feel free to rename the csv in the plugins and change it here too
         w = csv.writer(f)
 
         if f.tell() == 0:
@@ -45,7 +44,8 @@ with DAG(
         task_id='is_wise_api_active',
         http_conn_id='wise_latest_exchange_rate_api',
         endpoint='rates?source=GBP&target=MYR&time=+{{ ds }}'+'T00:00:00',
-        headers= {'Authorization': 'Bearer {insert your api key from WISE account here}}'}
+        headers= {'Authorization': 'Bearer insert your api key from WISE account here'} 
+        # replace the sentence "insert your api key from WISE account here" with your WISE api key. Do not remove the word Bearer
     )
 
     task_get_latest_exchange_rate=SimpleHttpOperator(
