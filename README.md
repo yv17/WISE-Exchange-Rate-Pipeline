@@ -6,7 +6,7 @@ If you are a PC user, I hope you will find this documentation helpful if you wer
 
 This project enables you to build DAGs to obtain and store daily exchange rate of a currency pair of your choice on WISE.
 
-## Prequisite:
+## Prequisites:
 1. Install Python 3.7 and above
 2. Install Docker Desktop using the link: https://www.docker.com/products/docker-desktop/
 3. Clone this repository
@@ -52,7 +52,7 @@ Here are some Airflow tutorial links which I found to be very useful:
 * [Airflow Tutorial Zero to Hero](https://www.youtube.com/watch?v=K9AnJ9_ZAXE) by coder2j
 * [How to start with Apache Airflow in Docker (Windows)](https://medium.com/@garc1a0scar/how-to-start-with-apache-airflow-in-docker-windows-902674ad1bbe) by Oscar Garcia
 
-There is also [a list of APIs](https://api-docs.transferwise.com/api-reference) on the WISE official website  that you can play with.
+There is also [a list of APIs](https://api-docs.transferwise.com/api-reference) on the WISE official website that you can play with.
 
 I hope you can get some inspirations from this project and build something fun!
 
