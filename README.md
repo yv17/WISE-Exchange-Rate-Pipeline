@@ -7,9 +7,9 @@ If you are a PC user, I hope you will find this documentation helpful if you wer
 This project enables you to build DAGs to obtain and store daily exchange rate of a currency pair of your choice on WISE.
 
 Prequisite；
-1. Install Docker Desktop using this [link](https://www.docker.com/products/docker-desktop/)
+1. Install Docker Desktop using the link: https://www.docker.com/products/docker-desktop/
 2. Clone this repository
-3. Create youe WISE account using this [link](https://wise.com/)
+3. Create your WISE account using the link: https://wise.com/
 
 
 Instructions:
@@ -25,7 +25,7 @@ Instructions:
 
     docker-compose up -d
 
-2. Go to your browser and copy the path http://localhost:8080/ on a new tab. Login to your local Airflow server using "airflow" as the username and password.
+2. Go to your browser and copy the path http://localhost:8080/ on a new tab. Login to your local Airflow server using "airflow" for both the username and password.
 
 3. You should see a DAG named "wise_exchange_rate_dag" on your Airflow server
 
