@@ -66,3 +66,9 @@ with DAG(
 
     task_is_wise_api_active >> task_get_latest_exchange_rate
     task_get_latest_exchange_rate >> task_save_exchange_rate
+
+    # extra notes:
+    # Run docker-compose up -d in ../docker/airflow to start the container
+    # Run docker-compose down -v in ../docker/airflow to stop the container
+    # Username: airflow
+    # Password: airflow
