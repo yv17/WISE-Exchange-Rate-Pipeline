@@ -7,9 +7,10 @@ If you are a PC user, I hope you will find this documentation helpful if you wer
 This project enables you to build DAGs to obtain and store daily exchange rate of a currency pair of your choice on WISE.
 
 Prequisite:
-1. Install Docker Desktop using the link: https://www.docker.com/products/docker-desktop/
-2. Clone this repository
-3. Create your WISE account using the link: https://wise.com/
+1. Install Python 3.7 and above
+2. Install Docker Desktop using the link: https://www.docker.com/products/docker-desktop/
+3. Clone this repository
+4. Create your WISE account using the link: https://wise.com/
 
 
 Instructions:

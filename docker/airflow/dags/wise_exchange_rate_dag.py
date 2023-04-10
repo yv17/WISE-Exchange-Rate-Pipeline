@@ -10,7 +10,7 @@ def save_exchange_rate(ti) -> None:
     exchg_rate = ti.xcom_pull(task_ids = ['get_latest_exchange_rate'])
     exchg_rate_dict = exchg_rate[0][0]
  
-    with open('./plugins/gbp2myr.csv', 'a') as f: #feel free to rename the csv in the plugins and change it here too
+    with open('./plugins/gbp2myr.csv', 'a') as f: #feel free to rename the csv in the plugins folder and remember to change it here too
         w = csv.writer(f)
 
         if f.tell() == 0:
@@ -31,7 +31,7 @@ with DAG(
     dag_id='wise_exchange_rate_dag',
     default_args=default_args,
     description='to fetch daily exchange rate from WISE',
-    start_date=datetime(2022,1,31,0),
+    start_date=datetime(2022,1,31,0), # you can change the backfill dates here
     schedule_interval='@daily'
 ) as dag:
 
